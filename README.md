@@ -1,4 +1,3 @@
-# antonlabellarte.github.io
 Antonio Labellarte, 27, Web and Software Developer.
 
 Languanges and Framework/libraries:
