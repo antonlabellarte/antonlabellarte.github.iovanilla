@@ -1,0 +1,236 @@
+body {
+    background-color: #31383F;
+    color: white;
+}
+
+
+/* p {
+    /* text-align: justify;
+    text-justify: inter-word;
+} */
+
+p:hover {
+    cursor: default;
+}
+
+hr {
+    border: 2.5px solid;
+    border-color: black;
+}
+
+.container {
+    display: flex;
+}
+
+#containerone {
+    
+    margin-bottom: 100px;
+}    
+
+
+.parallax {
+    /* The image used */
+    background-image: url("https://img.freepik.com/free-photo/close-up-image-programer-working-his-desk-office_1098-18707.jpg?w=1380&t=st=1680798139~exp=1680798739~hmac=cc104684acf1f61a900b1030c77840e43cffd436a346008ce6596b8f6aecf9c2");
+  
+    /* Set a specific height */
+    min-height: 400px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("https://previews.123rf.com/images/melpomen/melpomen2003/melpomen200300471/141873406-web-development-concept-with-blurred-city-abstract-lights-background.jpg");
+  
+    /* Set a specific height */
+    min-height: 400px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallaxtext {
+    padding-top: 150px;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 4px #4F494B;
+    
+}
+
+.centered {
+    text-align: center;
+}
+.navbar-brand {
+    cursor: pointer;
+}
+
+#navbtn {
+    padding: 5px;
+    background-color: #31383F;
+    border-color: #31383F;
+    transition: 0.5s;
+}
+
+#card {
+    font-family: Consolas,monaco,monospace; 
+}
+
+.card-header {
+    background-color: #343541;
+}
+
+.copy-clipboard {
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.jsmall {
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.copy-clipboard:hover {
+    cursor: pointer;
+}
+
+.card-title {
+    background-color: #31383F;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.card-text {
+    margin-top: -10px;
+    border-radius: 5px;
+    background-color: black;
+    padding: 7px;
+}
+
+.triobuttonone {
+    margin-bottom: -2.5px;
+    margin-left: -10px;
+    margin-right: 5px;
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    background-color: #FF605C;
+    border-radius: 50%;
+}
+
+.triobuttontwo {
+    margin-bottom: -2.5px;
+    margin-right: 5px;
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    background-color: #FFBD44;
+    border-radius: 50%;
+}
+
+.triobuttonthree {
+    margin-bottom: -2.5px;
+    margin-right: 5px;
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    background-color: #00CA4E;
+    border-radius: 50%;
+}
+
+.triobuttonone:hover, .triobuttontwo:hover, 
+.triobuttonthree:hover {
+    cursor: pointer;
+}
+
+#navbtn:hover {
+    text-decoration: underline;
+    text-decoration-color: #0275d8;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 3px;
+    padding: 5px;
+    color: white;
+}
+
+#svghomebtn {
+    border-color: #31383F;
+    transition: 0.5s;
+}
+
+#svghomebtn:hover {
+    border-color: #0275d8;     
+}
+
+
+#linkedinbtn {
+    color:white;
+}
+
+
+#linkedinbtn:hover {
+    color:white;
+    background-color: #0275d8;
+    border-color: white;
+    transition: 0,5s;
+}
+
+#containerone {
+    margin-top: 20px;
+}
+
+span {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#btnskls1, #btnskls2, #btnskls3, #btnskls4, #btnskls5 {
+    color: white;
+    border-color: black;
+    font-family:courier, courier new, serif;
+    font-weight: bold;
+}
+
+#btnskls1:hover, #btnskls2:hover, #btnskls3:hover, 
+#btnskls4:hover, #btnskls5:hover {
+    cursor: default;
+}
+
+/* #btnskls3:hover, #btnskls5:hover {
+    cursor: default;
+    color: black;
+} */
+
+#btnskls1 {
+    background-color: #FF8C00;
+}
+
+#btnskls2 {
+    background-color: #0098FF;
+}
+
+#btnskls3 {
+    color: black;
+    background-color: #f7df1e;
+}
+
+#btnskls4 {
+    background-color: #7A43B6;
+}
+
+#btnskls5 {
+    background-color: #d9534f
+}
+
+.snippet {
+    width: 800px;
+    margin: 0 auto;
+}

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Antonio Labellarte Junior Web Developer</title>
+
+    <!-- Icona titolo -->
+    <link rel = "icon" href = "https://unpkg.com/css.gg@2.0.0/icons/css/code-slash.css" 
+    type = "image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #31383F;">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand"></a> -->
+          <a class="btn btn-dark" href="index.html" id="svghomebtn" style="background-color: #31383F;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+            <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+          </svg></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"><button class="btn btn-dark" id="navbtn" type="button" style="color: white;">Home</button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#secaboutme"><button class="btn btn-dark" id="navbtn" type="button" style="color: white;">About</button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#secportfolio"><button class="btn btn-dark" id="navbtn" type="button" style="color: white;">Portfolio</button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/antonio-labellarte/"><button class="btn btn-dark" id="navbtn" type="button" style="color: white;">Linkedin <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                  </svg></button></a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              Antonio Labellarte Jr. Web Developer &nbsp; <a class="nav-link" href="mailto:antonio.labellarte@gmail.com"><button class="btn btn-sm btn-outline-secondary" id="navbtn" type="button" style="color: white;">Mail me <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
+                <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+              </svg></button></a>
+              
+            </span>
+          </div>
+        </div>
+      </nav>
+    <!-- End navbar -->
+    
+    <!-- Switch mode -->
+    <p style="margin-left: 15px; margin-top: 10px;">
+      <!-- <input class="btn-check" type="checkbox" id="thememode" onclick="checkStatus()" style="background-color: #31383F; color: #31383F"> 
+      <label class="btn btn-primary" for="btn-check">Single toggle</label>
+      Switch to<span id="statustheme"> lightmode. ☀️</span> 
+
+      <input type="checkbox" class="btn-check" id="thememode"> -->
+    </p>  
+    
+    <!-- Landing -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container" id="containerone">
+        <div class="row">
+          <div class="col">
+            <div class="card text-white mb-3" id="card" style="max-width: 18rem; background-color: black;">
+              <div class="card-header">&nbsp;<span class="triobuttonone"></span><span class="triobuttontwo"></span><span class="triobuttonthree"></span>
+                <small class="jsmall">javascript</small>
+                <a class="copy-clipboard" onclick="copyToClipboard()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                  <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                  <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                </svg>&nbsp; Copy to clipboard</a>
+              </div>
+              <div class="card-body">
+                <!-- <h6 class="card-title"></h6> -->
+                <p class="card-text"><br>
+                  <span style="color: yellow;">startToCode</span><span style="color: orange">()</span>;</p>
+                <!-- <h5 class="card-footer">
+                  <div class="text-center">
+                    Footer
+                  </div> -->
+                </h5>  
+              </div>
+            </div>
+          </div>
+          
+          <div class="col">
+            <h1 style="color: #0275d8;">Benvenuto</h1>
+            <p>Aspirante Junior Web Developer, sin dalla tenera età amante dell’informatica, dei videogame e del mondo eSports. Creativo, intuitivo, preciso e curioso.</p>
+          </div>
+        </div>  
+    </div>
+    <br>
+    <br>
+    
+    <!-- About me -->
+    <section id="secaboutme"></section>
+    <div class="parallax"><h1 class="parallaxtext">About me</h1></div>
+
+    <br>
+    <h1 style="text-align: center;">My Skills</h1>
+    <div class="container text-center" id="containerone">
+        <div class="row">
+          <div class="col">
+            <p>Aspirante Junior Web Developer pronto ad ogni sfida, curioso e con gran voglia di imparare.</p>
+          </div>
+          <div class="col">
+            <span class="btn btn-light btn-sm" id="btnskls1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-html" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5Zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662H6.515Zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999h.706Zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"/>
+              </svg> HTML</span>
+            <span class="btn btn-light btn-sm" id="btnskls2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-css" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.397 14.841a1.13 1.13 0 0 0 .401.823c.13.108.289.192.478.252.19.061.411.091.665.091.338 0 .624-.053.859-.158.236-.105.416-.252.539-.44.125-.189.187-.408.187-.656 0-.224-.045-.41-.134-.56a1.001 1.001 0 0 0-.375-.357 2.027 2.027 0 0 0-.566-.21l-.621-.144a.97.97 0 0 1-.404-.176.37.37 0 0 1-.144-.299c0-.156.062-.284.185-.384.125-.101.296-.152.512-.152.143 0 .266.023.37.068a.624.624 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.2-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.551.05-.776.15-.225.099-.4.24-.527.421-.127.182-.19.395-.19.639 0 .201.04.376.122.524.082.149.2.27.352.367.152.095.332.167.539.213l.618.144c.207.049.361.113.463.193a.387.387 0 0 1 .152.326.505.505 0 0 1-.085.29.559.559 0 0 1-.255.193c-.111.047-.249.07-.413.07-.117 0-.223-.013-.32-.04a.838.838 0 0 1-.248-.115.578.578 0 0 1-.255-.384h-.765ZM.806 13.693c0-.248.034-.46.102-.633a.868.868 0 0 1 .302-.399.814.814 0 0 1 .475-.137c.15 0 .283.032.398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.441 1.441 0 0 0-.489-.272 1.838 1.838 0 0 0-.606-.097c-.356 0-.66.074-.911.223-.25.148-.44.359-.572.632-.13.274-.196.6-.196.979v.498c0 .379.064.704.193.976.131.271.322.48.572.626.25.145.554.217.914.217.293 0 .554-.055.785-.164.23-.11.414-.26.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.799.799 0 0 1-.118.363.7.7 0 0 1-.272.25.874.874 0 0 1-.401.087.845.845 0 0 1-.478-.132.833.833 0 0 1-.299-.392 1.699 1.699 0 0 1-.102-.627v-.495ZM6.78 15.29a1.176 1.176 0 0 1-.111-.449h.764a.578.578 0 0 0 .255.384c.07.049.154.087.25.114.095.028.201.041.319.041.164 0 .301-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.256-.144-.463-.193l-.618-.143a1.72 1.72 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.527-.422.225-.1.484-.149.777-.149.304 0 .564.05.779.152.217.102.384.239.5.41.12.17.187.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.246-.181.923.923 0 0 0-.37-.068c-.216 0-.387.05-.512.152a.472.472 0 0 0-.184.384c0 .121.047.22.143.3a.97.97 0 0 0 .404.175l.621.143c.217.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Z"/>
+              </svg> CSS</span>
+            <span class="btn btn-light btn-sm" id="btnskls3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-js" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.186 15.29a1.176 1.176 0 0 1-.111-.449h.765a.578.578 0 0 0 .255.384c.07.049.153.087.249.114.095.028.202.041.319.041.164 0 .302-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.255-.144-.462-.193l-.619-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.528-.422.224-.1.483-.149.776-.149.305 0 .564.05.78.152.216.102.383.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.247-.181.923.923 0 0 0-.369-.068c-.217 0-.388.05-.513.152a.472.472 0 0 0-.184.384c0 .121.048.22.143.3a.97.97 0 0 0 .405.175l.62.143c.218.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033A1.32 1.32 0 0 1 0 14.791h.765a.576.576 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466v-2.745h.79v2.725c0 .44-.119.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.569-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Z"/>
+              </svg> JavaScript</span>
+            <span class="btn btn-light btn-sm" id="btnskls4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap" viewBox="0 0 16 16">
+                <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"/>
+                <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"/>
+              </svg> Bootstrap</span>
+
+              <span class="btn btn-light btn-sm" id="btnskls5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 448 512"><path d="M185.7 268.1h76.2l-38.1-91.6-38.1 91.6zM223.8 32L16 106.4l31.8 275.7 176 97.9 176-97.9 31.8-275.7zM354 373.8h-48.6l-26.2-65.4H168.6l-26.2 65.4H93.7L223.8 81.5z"/></svg>
+                 Angular</span>
+            
+          </div>
+        </div>  
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- End Prima Sezione-->
+
+    <!-- Seconda sezione -->
+    <section id="secportfolio"></section>
+    <div class="parallax2">
+      <h1 class="parallaxtext">Portfolio ed esperienze</h1>
+    </div>
+
+    <!-- About me -->
+    <br>
+    <h1 style="text-align: center;">Esperienze</h1>
+    <div class="container text-center" id="containerone">
+      <div class="row">
+        <div class="col">
+          <p style="text-align: center;">
+            <img style="border-radius: 50%;"width="64" height="64" src="https://media.licdn.com/dms/image/C4D0BAQHysC3wc_N3Kw/company-logo_200_200/0/1588576487648?e=1692835200&v=beta&t=e4r43KcKe81d9wfwOToeSSCgvs2YSBZ6NoGnwYwDPrc">
+            <br><br> Computer Sharing Sud | Capurso (BA) <hr><span style="text-align: right;">Gennaio 2023 - Marzo 2023</span><br><br>
+            <b>Mansione principale</b>: Sviluppo Software ed Applicativi in ambiente IBM i (AS400).<br>
+            <b>Competenze</b>: Sviluppo in RPG/RPG Free Format, SQL e Database, RDi.
+          </p>
+        </div>
+        <div class="col">
+          <br>
+          <p>Computer Sharing Sud è specializzata nell'assistenza tecnica e nella informatizzazione a 360° di Centri di Distribuzione, Cash and Carry e Supermecati  attraverso le soluzioni software progettate internamente. 
+            Specializzati nella installazione e programmazione di Etichette Elettroniche Interattive</p>
+          
+        </div>
+      </div>      
+    </div>
+    
+    <br>
+
+    <div class="parallax3">
+      <h1 class="parallaxtext" style="padding: 50px;">Portfolio</h1>
+    </div>    
+
+    <div class="container text-center" id="containerone" style="display:grid">
+      <div class="row">
+        <p style="text-align: center;">
+            <img width="64" height="64" src="https://cdn-icons-png.flaticon.com/512/1540/1540220.png">
+            <br><br>Sito Web Portfolio Personale<br><hr style="margin: 0 auto; width: 50%; margin-bottom: 10px">
+            <a href="https://antonlabellarte.github.io" style="color: white">https://antonlabellarte.github.io</a>
+          </p>
+          <p style="text-align: center;">Sito Web Personale come Profilo Portfolio, realizzato in 
+            <img src="https://cdn-icons-png.flaticon.com/512/1532/1532556.png" width="16" height="16"> HTML, 
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" width="16" height="16"> CSS e 
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png" width="16" height="16"> JavaScript</p>
+      </div>      
+    </div>
+
+    <div class="container text-center" id="containerone" style="display:grid">
+      <div class="row">
+        <p style="text-align: center;">
+          <img width="64" height="64" src="https://cdn-icons-png.flaticon.com/512/1540/1540220.png" style="margin-right: 15px">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+          </svg>
+          <img width="64" height="64" src="https://cdn-icons-png.flaticon.com/512/1540/1540220.png" style="margin-left: 15px; margin-bottom: 10px">
+            <br>Sito Web Clone<br>
+            <b>(In lavorazione)</b><hr style="margin: 0 auto; width: 50%; margin-bottom: 10px">
+            <a href="https://antonlabellarte.github.io" style="color: white">https://antonlabellarte.github.io</a>
+          </p>
+          <p style="text-align: center;">Clone del sito ABCDEF realizzato con
+            <img src="https://cdn-icons-png.flaticon.com/512/1532/1532556.png" width="16" height="16"> HTML, 
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" width="16" height="16"> CSS e 
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png" width="16" height="16"> JavaScript</p>
+      </div>      
+    </div>
+
+    <div class="container text-center" id="containerone" style="display:grid">
+      <div class="row">
+        <p style="text-align: center;">
+          <img width="64" height="64" src="https://cdn-icons-png.flaticon.com/512/1540/1540220.png" style="margin-right: 15px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+            </svg>
+            <img width="64" height="64" src="https://static-00.iconduck.com/assets.00/crud-icon-512x512-rgmyfq1x.png" style="margin-left: 15px; margin-bottom: 10px">
+            <br>CRUD Web App<br>
+            <b>(In lavorazione)</b><hr style="margin: 0 auto; width: 50%; margin-bottom: 10px">
+            <a href="https://antonlabellarte.github.io" style="color: white">https://antonlabellarte.github.io</a>
+          </p>
+          <p style="text-align: center;">Web App CRUD per mostrare l'utilizzo delle quattro operazioni elementari informatiche (Create, read, update, delete),<br>
+            realizzata con 
+            <img src="https://cdn-icons-png.flaticon.com/512/1532/1532556.png" width="16" height="16"> HTML, 
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" width="16" height="16"> CSS e 
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png" width="16" height="16"> JavaScript</p>
+      </div>      
+    </div>
+
+    <div class="container text-center" id="containerone" style="display:grid">
+      <div class="row">
+        <p style="text-align: center;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+            <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+          </svg>
+            <br><br>Bot Discord<br><hr style="margin: 0 auto; width: 50%; margin-bottom: 10px">
+            <a href="https://antonlabellarte.github.io" style="color: white">https://antonlabellarte.github.io</a>
+          </p>
+          <p style="text-align: center;">Bot creato per la gestione di un server Discord, realizzato con
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px-Python.svg.png" width="16" height="16">
+            <b>Python</b> e la libreria <b>discord.py</b>.
+          </p>
+      </div>      
+    </div>
+
+    <div class="parallax4">
+      <h1 class="parallaxtext" style="padding: 50px;">Competenze</h1>
+    </div>
+
+    <div class="container text-center" id="containerone" style="display:grid">
+      <div class="row">
+        <div class="col">
+          <p style="text-align: center;">
+            <img style="border-radius: 50%;"width="64" height="64" src="https://media.licdn.com/dms/image/C4E0BAQG5VpSBkyrtHA/company-logo_200_200/0/1560153203491?e=1692835200&v=beta&t=Y99fohNoJDDJePLjO_ZO8gK_uLUtzEuGgC-InRAeEPI">
+            <br><br>Qualifica professionale Web Developer
+            <br><b>Level EQF 4 of European Qualifications Framework</b><br>
+            <br>Informa Scarl Bari<br> <hr><br><br>
+            <b>Competenze</b>: HTML, CSS3, JavaScript, PhP, SQL, Bootstrap e WordPress.
+          </p>
+        </div>
+        <div class="col">
+          <br><br><br>
+          <p>Corso di formazione presso l’ente formativo Inform Scarl, mirato all’apprendimento delle 
+            tecnologie web base</p>
+          
+        </div>
+      </div>      
+    </div>
+
+    <div class="container text-center" id="containerone" style="display:grid">
+      <div class="row">
+        <div class="col">
+          <p style="text-align: center;">
+            <img style="border-radius: 50%;"width="64" height="64" src="https://media.licdn.com/dms/image/C560BAQHxpX1l8Av2Dg/company-logo_200_200/0/1659035932009?e=1692835200&v=beta&t=bHEdqdW0Ra_smq_1OlFeL-QqMSr7Ff_6Umr4dsic8cQ">
+            <br><br>Corso di formazione Cloud Developer
+            <br>Accenture PLC<br> <hr><br><br>
+            <b>Competenze</b>: Google Cloud Platform, Docker, Kubernetes, AppEngine, Java.
+          </p>
+        </div>
+        <div class="col">
+          <br><br><br>
+          <p>Corso di formazione come Cloud Developer, mirato all’apprendimento delle tecnologie Cloud</p>
+          
+        </div>
+      </div>      
+    </div>
+
+    <div class="container text-center" id="containerone" style="display:grid">
+      <div class="row">
+        <div class="col">
+          <p style="text-align: center;">
+            <img width="63" height="64" src="https://media.licdn.com/dms/image/C4D0BAQF-8pvbKNjxcw/company-logo_200_200/0/1633704412498?e=1692835200&v=beta&t=qmFs7K8HWeCOYtmele713K8NYAK4nUEeRCNiYuDBZkA">
+            <br><br>Corso di formazione Junior Full-stack Web Developer
+            <br>Sidea Group, Bari<br> <hr><br><br>
+            <b>Competenze</b>: HTML, CSS, JavaScript, Angular, PhP, SQL, Laravel, Bootstrap e Wordpress
+          </p>
+        </div>
+        <div class="col">
+          <br><br><br>
+          <p>Corso di formazione come Junior Full Stack Web developer, mirato all’apprendimento delle 
+            tecnologie per lo sviluppo web.</p>
+          
+        </div>
+      </div>      
+    </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+        <div class="text-center">
+          <small>Antonio Labellarte Jr. Web Developer</small>
+        </div>
+    </footer>
+
+    <!-- JS Bootstrap -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+  </body>
+</html>
